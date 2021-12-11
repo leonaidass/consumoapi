@@ -3,13 +3,13 @@
     <!-- <v-btn @click="obtenerproductos()" class="primary mt-2" >Obtener Datos</v-btn> -->
     <v-container>
        <v-row>
-         <v-col cols="4" v-for="producto in productos" :key="producto.id">
+         <v-col cols="12" md="4" v-for="producto in productos" :key="producto.id">
            <v-card>
              <v-card-title>
                {{producto.nombre}}
              </v-card-title>
              <v-card-text>
-               <img :src=producto.imagen alt="" style="width:300px">
+               <img :src=producto.imagen alt="" style="width:50%">
                <p>Precio: {{producto.precio}}</p>
                <p>Cantidad: {{producto.cantidad}}</p>
                
